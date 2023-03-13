@@ -48,7 +48,7 @@ header nav ul li a {
     align-items: center;
     justify-content: end;
     padding-right: 20px;
-    background-image: url(./Assets/images/photo-1553095066-5014bc7b7f2d.jpg);
+    background-image: url(/Assets/images/photo-1553095066-5014bc7b7f2d.jpg);
     height: 100px;
 }
 
@@ -284,7 +284,12 @@ article img:hover {
 @media screen and (max-width: 900px) {
 
    
-    
+    header {
+        width: 102%;
+    }
+    figure {
+        width: 102%;
+    }
 
     .me {
         order:0;
@@ -355,6 +360,7 @@ article img:hover {
         align-items: center;
         background-color: var(--dark);
         height: 150px;
+        width: 110%;
         
     }
 
@@ -435,6 +441,7 @@ article img:hover {
         align-items: center;
         background-color: var(--dark);
         height: 150px;
+        width: 120%;
         
     }
 
