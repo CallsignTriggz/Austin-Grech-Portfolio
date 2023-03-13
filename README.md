@@ -2,7 +2,7 @@
 
 ## Deployment URL
 
-url: 
+url: https://austingrech.github.io/Austin-Grech-Portfolio/
 
 ## Mock Up
 
