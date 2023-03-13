@@ -1,0 +1,510 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --light: #fff;
+    --dark: rgb(60,79,99);
+}
+
+/* header section below */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    height: 100px;
+}
+
+h1 {
+    background-color: aqua;
+    font-size: 50px;
+    margin-left: 0;
+    padding-left: 8%;
+}
+
+header nav {
+    margin-right: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* figure image below */
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+    background-image: url(/Assets/images/photo-1553095066-5014bc7b7f2d.jpg);
+    height: 100px;
+}
+
+figcaption {
+    font-size: 50px;
+    background-color: aqua;
+    margin: 0;
+}
+
+/* main content containers below */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#about, #work, #contact {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/*about section below */
+
+section p+p {
+    border-left: 2px solid var(--dark);
+}
+
+section p {
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    word-spacing: -1px;
+    text-indent: 20px;
+}
+
+section h2 {
+    margin-left: 20%;
+    padding: 25px;
+    direction: rtl;
+    width: 50px;
+    font-size: 60px;
+    color: var(--dark);
+    border-right: 3px solid var(--dark);
+    max-width: 20%;
+}
+
+
+.me {
+    margin-left: 20px;
+    align-self: center;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--dark)
+}
+
+/* work section below */
+
+.imghead {
+    position: relative;
+    bottom: 50%;
+    background-color: aqua;
+    width: 250px;
+    padding: 10px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 20px;  
+}
+
+.main {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.main img {
+    height: 400px;
+    width: 850px;
+}
+
+
+.box2 {
+    height: 200px;
+    margin: 10px;
+}
+
+.box2 img {
+    margin-top: 0;
+    height: 200px;
+    width: 400px;
+}
+
+article img {
+    border: 3px solid aqua;
+    border-radius: 10px;
+}
+
+article img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+/* contact section below */
+
+#about, #contact {
+    align-items: center;
+}
+
+#contact nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#contact nav ul li a {
+    color: var(--dark);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    font-size: 25px;
+}
+
+.contactme {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Resume image below */
+
+.resume {
+    display: block;
+    width: 50%;
+    border: 5px solid aqua;
+    border-radius: 5%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume:hover { 
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+
+/* Media Queries start below 1200px, 900px, 650px, & 300px */
+
+@media screen and (max-width: 1200px) {
+  
+    .imgcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    section p {
+        font-size: 20px;
+        text-indent: 0;
+        width: 700px;
+    }
+
+    #about h2, #work h2, #contact h2 {
+        
+        width: 100%;
+        max-width: 400px;
+        border-bottom: 3px solid var(--dark);
+        border-right: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .me {
+        display: none;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    section p+p {
+        border-top: 3px solid var(--dark);
+        border-left: 0;
+    }
+    
+    .main {
+        height:600px;
+    }
+
+    .main img {
+        height: 600px;
+        width: 800px;
+    }
+
+    .box2 {
+        height: 200px;
+        margin-top: 10px;
+
+    }
+    .box2 img {
+        height: 200px;
+        width: 400px;
+    }
+
+    .contactme {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+   
+    
+
+    .me {
+        order:0;
+    }
+    
+    #about h2, #work h2, #contact h2 {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        border-bottom: 3px solid var(--dark);
+        border-right: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+    .imghead {
+        font-size: 20px;
+        width: 100px;
+    }
+
+    .main {
+        height: 500px;
+    }
+    
+    .main img {
+        height: 500px;
+        width: 600px;
+    }
+    .box2 {
+        height: 200px;
+        width: 300px;
+    }
+    .box2 img{ 
+        height: 200px;
+        width: 300px;
+    }
+
+    header nav ul li a {
+        color: aqua;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    h1 {
+        background-color: aqua;
+        font-size: 30px;
+        margin-left: 0;
+        padding-left: 8%;
+    }
+
+    figcaption {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contactme {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 650px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark);
+        height: 150px;
+        
+    }
+
+    h1 {
+        text-align: center;
+        background-color: aqua;
+        font-size: 50px;
+        padding-left: 0;
+        margin-top: 20px;
+       
+    }
+
+    header nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header nav ul li a {
+        color: aqua;
+        text-decoration: none;
+        font-size: 20px;
+        box-shadow: 5px 5px 5px black;
+    }
+
+
+    figcaption {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 40px;
+    }
+
+
+    #about h2, #work h2, #contact h2 {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        border-bottom: 3px solid var(--dark);
+        border-right: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+
+    #work {
+        width: 340px;
+    }
+    .main {
+        height: 380px;
+        width: 340px;
+    }
+    .main img {
+        height: 380px;
+        width: 340px;
+    }
+
+    .box2 {
+        width: 340px;
+    }
+
+    .box2 img {
+        height: 200px;
+        width: 340px;
+    }
+
+    .contactme {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 300px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark);
+        height: 150px;
+        
+    }
+
+    h1 {
+        text-align: center;
+        background-color: aqua;
+        font-size: 50px;
+        padding-left: 0;
+        margin-top: 20px;
+       
+    }
+
+    header nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header nav ul li a {
+        color: aqua;
+        text-decoration: none;
+        font-size: 20px;
+        box-shadow: 5px 5px 5px black;
+    }
+
+
+    figcaption {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 40px;
+    }
+
+
+    #about h2, #work h2, #contact h2 {
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        border-bottom: 3px solid var(--dark);
+        border-right: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+
+    .imgcontainer {
+        margin: 0;
+    }
+    #work {
+        width: 280px;
+    }
+    .main {
+        height: 380px;
+        width: 280px;
+    }
+    .main img {
+        height: 380px;
+        width: 280px;
+    }
+
+    .box2 {
+        width: 280px;
+    }
+
+    .box2 img {
+        height: 200px;
+        width: 280px;
+    }
+
+    .contactme {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+    }
+    
+}
