@@ -37,7 +37,8 @@ header nav ul li {
 
 header nav ul li a {
     color: aqua;
-    text-decoration: none;
+    text-decoration:underline;
+    text-underline-offset: 5px;
     font-size: 25px;
 }
 
@@ -327,11 +328,9 @@ article img:hover {
         width: 300px;
     }
 
-    header nav ul li a {
-        color: aqua;
-        text-decoration: none;
+    header nav ul li a:last-child {
         font-size: 20px;
-        margin-right: 20px;
+        margin-right: 35px;
     }
 
     h1 {
